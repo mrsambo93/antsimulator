@@ -3,7 +3,7 @@ const app = express()
 const morgan = require('morgan')
 
 app.get('/', function(req,res) {
-  res.sendFile('/home/mrsambo/Documenti/infovis/Homework1/ants.html');
+  res.sendFile('./ants.html');
 });
 
 app.use(morgan('tiny'));
