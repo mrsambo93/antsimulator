@@ -3,12 +3,12 @@ const app = express()
 const morgan = require('morgan')
 
 app.use(morgan('tiny'));
-app.use(express.static(__dirname + 'scripts'))
+app.use(express.static(__dirname + '/scripts'))
 
 var port = process.env.PORT || 8080;
 
 app.get('/', function(req,res) {
-  res.sendFile(__dirname + 'ants');
+  res.sendFile(__dirname + '/ants.html');
 });
 
 app.listen(port, function() {
