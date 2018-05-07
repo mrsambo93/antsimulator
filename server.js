@@ -9,6 +9,8 @@ app.get('/', function(req,res) {
 app.use(morgan('tiny'));
 app.use(express.static('scripts'))
 
-app.listen(8080, function() {
+var port = process.env.PORT || 8080;
+
+app.listen(port, function() {
   console.log('App listening on port 8080')
 });
