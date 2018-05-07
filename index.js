@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const morgan = require('morgan')
 
-app.get('/ants', function(req,res) {
+app.get('/', function(req,res) {
   res.sendFile('/home/mrsambo/Documenti/infovis/Homework1/ants.html');
 });
 
