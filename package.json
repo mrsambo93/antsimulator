@@ -1,0 +1,22 @@
+{
+  "name": "homework1",
+  "version": "1.0.0",
+  "description": "Homework formiche D3.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "D3.js"
+  ],
+  "author": "Stefano Silvi",
+  "license": "ISC",
+  "dependencies": {
+    "contextify": "^1.0.0",
+    "d3": "^5.1.0",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "jsdom": "^11.10.0",
+    "morgan": "^1.9.0"
+  }
+}
