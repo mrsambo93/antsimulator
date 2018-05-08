@@ -18,9 +18,13 @@ text {
 <script src="https://unpkg.com/d3-force-attract@latest"></script>
 <script src="ant.js"></script>
 </head>
-<body><br></body>
+<body>
+  <h1>
+    Ants
+  </h1>
+</body>
 <script>
-  const width = 600;
+  const width = 800;
   const height = 600;
   const antNumber = 30;
   const antSizes = {
@@ -56,7 +60,8 @@ text {
   
   var container = d3.select("body")
     .append("svg")
-    .attr("style", "outline: solid black; background-color: #458B00;")
+    .attr("style", 'outline: solid black;' +
+      ' background-image: url("https://i.pinimg.com/236x/26/38/78/263878e8c94c541d342d945542fa1582--seamless-texture-grass-texture.jpg");')
     .attr("width", width)
     .attr("height", height)
     .on("mousemove", handleMouseMove)
@@ -70,8 +75,8 @@ text {
     .enter()
     .append("g")
       .attr("class", "ant")
-      .attr("height", height*0.04)
-      .attr("width", width*0.04)
+      .attr("height", antSizes.height)
+      .attr("width", antSizes.width)
       .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")" });
 
   var child = box.append("path")
